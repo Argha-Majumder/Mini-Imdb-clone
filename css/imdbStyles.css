@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Section */
+
+.nav-section {
+    border: 1px solid black;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 0;
+}
+
+/* .nav-section div {
+    border: 1px solid black;
+    /* margin-right: -4%; }*/ 
+.nav-section span {
+    color: white;
+}
+
+#imdb-logo a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+#imdb-logo {
+    margin-left: 3.2vw;
+    height: 34px;
+    width: 65px;
+}
+
+#menu {
+    height: 4vh;
+    width: 6vw;
+}
+
+.fa-bars {
+    color: #ffffff;
+}
+
+#search-bar {
+    height: 40px;
+    width: 50vw;
+}
+
+form {
+    width: inherit;
+    border-radius: 20px;
+    height: 45px;
+    background-color: rgb(109, 114, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+input {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    padding: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+}
+::placeholder {
+    opacity: 0.7;
+    color: #fff;
+}
+#search-btn {
+    height: 2.9rem;
+    width: 4.5rem;
+    border: transparent;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+#language {
+    margin-right: 2%;
+}
+
+#movie-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(95, 92, 92, 0.973);
+}
+
+/* Main Section */
+#main-container {
+    min-height: 89vh;
+    width: 65%;
+}
+
+#empty-search-text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    padding-left: 0.5rem;
+    margin: 2% 4%;
+    color: rgb(253, 206, 35);
+}
+
+#suggestions-container {
+    min-height: 100%;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Card Section */
+
+a {
+    box-sizing: border-box;
+}
+
+#movie-card-container {
+    width: inherit;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.card {
+    border: transparent;
+    background-color: rgb(18,21,21);
+    width: 10rem;
+}
+
+.card > img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.fa-star {
+    color: rgb(253, 206, 35);
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+#rating {
+    color: white;
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.fav-btn {
+    border: transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+.fa-heart {
+    color: white;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+
+/* Favourite Section */
+
+#favourites-container {
+    width: 33%;
+    /* border: 1px solid black; */
+    height: 100vh;
+    background-color: rgb(28,27,27);
+    z-index: 1;
+    flex-direction: column;
+}
+
+#empty-text {
+    margin-top: 40%;
+    margin-left: 15%;
+}
+
+#empty-text p {
+    text-align: center;
+    color: rgba(95, 92, 92, 0.973);
+    margin-right: 20%;
+    font-size: 1.5rem;
+}
+
+.heart .fa-heart{
+    color:rgba(95, 92, 92, 0.973);
+}
+
+#favourites-movie-container {
+    overflow-y: scroll;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#favourites-movie-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+#favourites-movie-container::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+#favourites-movie-container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+}
+
+.fav-movie-card {
+    padding-right: 1rem;
+    width: 95%;
+    background-color: rgb(12, 11, 11);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.fav-movie-poster {
+    width: 80px;
+    height: 100px;
+}
+
+.fav-movie-name {
+    color: #fff;
+    text-decoration: none;
+}
+
+.movie-name:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.fav-year {
+    color: white;
+}
+
+.movie-card-details {
+    width: 60%;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
+
+.fa-trash-can {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.fa-trash-can:hover {
+    color: rgb(150, 29, 29);
+}
+
+
+/* Resposiveness */
+
+@media screen and (max-width: 576px) {
+
+    #search-bar {
+        position: absolute;
+        left: 25%;
+    }
+
+    #menu-item {
+        display: none;
+    }
+
+    #menu {
+        position: relative;
+        margin-right: 4%;
+    }
+
+    #menu:hover {
+        cursor: pointer;
+    }
+
+    #favourites-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #movie-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imdb-pro, #watch-list, #language, #sign {
+        display: none;
+    }
+}

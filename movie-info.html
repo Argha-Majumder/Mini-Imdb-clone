@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Information</title>
+        <link rel="icon" type="image/x-icon" href="assets/imdb.png"/>
+        <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/movie-info-styles.css">
+    </head>
+    <body>
+        <!-- Nav Section -->
+        <nav>
+            <div class="nav-section">
+                <div id="imdb-logo">
+                    <a href="index.html">
+                        <img src="assets/imdb_big_icon.png" alt="imdb logo"> 
+                    </a>
+                </div>
+                <div id="go-back-button">
+                    <a href="index.html">
+                        <button type="button" class="btn">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <span>Go Back</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Section -->
+        <main class="main-section">
+
+            <!-- Title and Rating Section -->
+            <div id="movie-title" style="max-width: 70vw;">
+                <div>
+                    <h1 id="title">Movie Name</h1>
+                    <p class="text-info">
+                        Year: 
+                        <span id="year">----</span>
+                    </p>
+                    <span id="duration" class="text-info">
+                        Duration:
+                        <span id="runtime">-- min</span>
+                    </span>
+                </div>
+
+                <div id="movie-rating">
+                    <h6 class="text-rating">Rating</h6>
+                    <h5>
+                        <i class="fa-solid fa-star"></i>
+                        <span id="rating">8.5/10</span>
+                    </h5>
+                </div>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="card" style="max-width: 70vw;">
+                <div class="row">
+                    <div>
+                        <img id="poster" style="max-height: 400px;">
+                    </div>
+                    <div id="upper-container">
+                        <div class="card-body">
+                            <h5 class="card-title">Storyline</h5>
+                            <p class="card-text" id="story">_ _ _</p>
+                            <p class="info-type">
+                                Directors:
+                                <span id="director-names" class="information">_ _ _</span>
+                            </p>
+                            <p class="info-type">
+                                Cast:
+                                <span id="cast-names" class="information">_ _ _</span>
+                            </p>
+                            <p class="info-type">
+                                Genre:
+                                <span id="genre" class="information">_ _ _</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/movie-info.js"></script>
+    </body>
+</html>

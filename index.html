@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMDB Clone</title>
+        <link rel="icon" type="image/x-icon" href="assets/imdb.png"/>
+        <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/imdbStyles.css">
+    </head>
+    <body>
+        <!-- Nav Section -->
+        <nav>
+            <div class="nav-section">
+                <div id="imdb-logo">
+                    <a href="index.html">
+                        <img src="assets/imdb_big_icon.png" alt="imdb logo"> 
+                    </a>
+                </div>
+                <div id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <span id="menu-item">Menu</span>
+                </div>
+                <div id="search-bar">
+                    <form action="" autocomplete="off">
+                        <input type="text" placeholder="Search IMDb" id="search-movie" autocomplete="off">
+                        <button id="search-btn">
+                            <i class="fas fa-search icon"></i>
+                        </button>
+                    </form>
+                </div>
+                <div id="imdb-pro">
+                    <span>IMDbPro</span>
+                </div>
+                <div id="watch-list">
+                    <span>Watchlist</span>
+                </div>
+                <div id="sign">
+                    <span>Sign In</span>
+                </div>
+                <div id="language">
+                    <span>EN</span>
+                    <i class="fa-sharp fa-solid fa-caret-down" style="color: white;"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div id="movie-container" class="movie-parts">
+            
+            <!-- Main Section -->
+            <main id="main-container">
+                <div id="suggestions-container" class="movie-parts">
+                    <p id="empty-search-text">Your search results will appear here!</p>
+                    <div id="movie-card-container">
+                        <!-- <div class="card" data-id="evil dead rise">
+                            <a href="movie-info.html" data-id="evil dead rise" class="text-decoration">
+                                <img src="" class="card-img-top" alt="" data-id="evil dead rise">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">
+                                        <a href="movie-info.html" data-id="evil dead rise">evil dead rise</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-star"><span id="rating">&nbsp;6.9</span></i>
+                                        <button class="fav-btn">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </p>
+                                </div>
+                            </a> 
+                        </div> -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- Favourites Section -->
+            <section id="favourites-container">
+                <h2>Favourites</h2>
+                <div id="empty-text">
+                    <p class="heart">
+                        Click on <i class="fa-heart fa-solid"></i> icon to add
+                    </p>
+                </div>
+                <div id="favourites-movie-container">
+                    <!-- <div class="fav-movie-card">
+                        <img src="" alt="" class="fav-movie-poster">
+                        <div class="movie-card-details">
+                            <p class="movie-name">
+                                <a href="movie-info.html" class="fav-movie-name" data-id="Evil dead rise">Evil dead rise</a>
+                            </p>
+                            <small>2023</small>
+                        </div>
+                        <div class="delete-btn">
+                            <i class="fa-solid fa-trash-can" data-id="evil dead rise"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+        <script src="js/imdb.js"></script>
+    </body>
+</html>
